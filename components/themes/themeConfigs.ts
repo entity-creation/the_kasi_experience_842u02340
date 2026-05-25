@@ -215,7 +215,7 @@ export const themes: Record<string, ThemeConfig> = {
     },
     components: {
       letter: { backgroundTexture: 'subtitle-overlay', waxSealAnimation: false, handwritingAnimation: false, paperFoldEffect: false },
-      photos: { maxPerPage: 1, frameStyle: 'none', hoverEffect: 'none', transition: 'kenBurns' },
+      photos: { maxPerPage: 6, frameStyle: 'none', hoverEffect: 'none', transition: 'kenBurns' },
       audio: { playerStyle: 'filmScore', waveformAnimation: true },
       video: { frameStyle: 'cinemaScreen', fullscreenOnPlay: true },
       buttons: { shape: 'thinOutline', hoverAnimation: 'glow' },

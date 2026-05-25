@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from '../themes/ThemeProvider';
@@ -17,27 +17,41 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
 
   const visible = photos.slice(0, photoConfig.maxPerPage);
 
-  // Ken Burns: full-screen rotating slideshow for cinematic
+  // Ken Burns: full-screen rotating slideshow for cinematic.
+  // Each photo displays for SLIDE_DURATION ms, then cross-fades to the next.
+  // We use a useEffect timer rather than onAnimationComplete to avoid
+  // double-firing (AnimatePresence triggers onAnimationComplete for both
+  // enter and exit animations, which caused photos to be skipped).
+  const SLIDE_DURATION = 5000; // ms each photo is shown before cross-fade
+
+  useEffect(() => {
+    if (photoConfig.transition !== 'kenBurns' || visible.length <= 1) return;
+    const id = setInterval(() => {
+      setKenBurnsIndex(i => (i + 1) % visible.length);
+    }, SLIDE_DURATION);
+    return () => clearInterval(id);
+  }, [visible.length, photoConfig.transition]);
+
   if (photoConfig.transition === 'kenBurns') {
     return (
-      <div className="relative w-full" style={{ height: '80vh' }}>
-        <AnimatePresence mode="wait">
+      <div className="relative w-full overflow-hidden" style={{ height: '80vh' }}>
+        {/* Render ALL slides stacked; only the current one is visible.
+            This avoids AnimatePresence mode="wait" swallowing photos. */}
+        {visible.map((src, i) => (
           <motion.div
-            key={kenBurnsIndex}
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.12 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 6, ease: 'easeInOut' }}
+            key={src}
             className="absolute inset-0"
-            onAnimationComplete={() => {
-              setTimeout(() => {
-                setKenBurnsIndex(i => (i + 1) % visible.length);
-              }, 1000);
+            initial={false}
+            animate={{
+              opacity: i === kenBurnsIndex ? 1 : 0,
+              scale:   i === kenBurnsIndex ? 1.08 : 1,
+              zIndex:  i === kenBurnsIndex ? 1 : 0,
             }}
+            transition={{ duration: 1.4, ease: 'easeInOut' }}
           >
             <Image
-              src={visible[kenBurnsIndex]}
-              alt={`Memory ${kenBurnsIndex + 1}`}
+              src={src}
+              alt={`Memory ${i + 1}`}
               fill
               className="object-cover"
               sizes="100vw"
@@ -45,7 +59,23 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </motion.div>
-        </AnimatePresence>
+        ))}
+
+        {/* Slide counter */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+          {visible.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setKenBurnsIndex(i)}
+              className="transition-all rounded-full"
+              style={{
+                width:   i === kenBurnsIndex ? 20 : 6,
+                height:  6,
+                background: i === kenBurnsIndex ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.3)',
+              }}
+            />
+          ))}
+        </div>
       </div>
     );
   }
