@@ -1,3 +1,5 @@
 {
-  "/experience/[theme]/[tier]/page": "app/experience/[theme]/[tier]/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/experience/[theme]/[tier]/page": "app/experience/[theme]/[tier]/page.js",
+  "/page": "app/page.js"
 }
