@@ -1,0 +1,49 @@
+{
+  "id": "def456",
+  "recipientName": "Zara",
+  "eventType": "Anniversary",
+  "theme": "romantic",
+  "tier": "journey",
+  "senderName": "Your love",
+  "letter": "My darling Zara,\n\nThree years ago I didn't know that saying yes to one dinner would mean saying yes to a whole life. But here we are — and every single day since has felt like a gift I didn't earn.\n\nYou are the person I look for in every room. The voice that makes the whole day make sense. The reason I believe in things like fate and luck and all the soft words I used to roll my eyes at.\n\nToday is just a date on a calendar. But it carries the weight of everything we've built together.\n\nI love you. More than these words, always.",
+  "photos": [
+    "https://images.unsplash.com/photo-1494955870116-e6e71573c3f8?w=1200&q=80",
+    "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80",
+    "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&q=80",
+    "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=1200&q=80",
+    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=1200&q=80",
+    "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1200&q=80"
+  ],
+  "voiceNote": "/audio/anniversary-voice.mp3",
+  "soundtrack": "/audio/our-song.mp3",
+  "messagesFromGroup": [
+    { "name": "Mum", "message": "From the moment I met you, I knew you were the one for him. Love you both." },
+    { "name": "Priya", "message": "Three years of watching you two and I still get butterflies. Happy anniversary!" },
+    { "name": "James", "message": "You make each other better. That's all that matters. Cheers to many more." }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "text": "Where did we go on our very first date?",
+        "correctAnswer": "That little Italian place on Fifth",
+        "options": ["The rooftop bar", "That little Italian place on Fifth", "The cinema", "The harbour"]
+      },
+      {
+        "text": "What song was playing when we danced in the kitchen?",
+        "correctAnswer": "Something by Norah Jones",
+        "options": ["Something by Norah Jones", "A Frank Sinatra track", "Nina Simone", "We don't remember"]
+      },
+      {
+        "text": "What did I say the first time I told you I loved you?",
+        "correctAnswer": "I'm not great with words, but I love you",
+        "options": [
+          "I love you more than words",
+          "I'm not great with words, but I love you",
+          "You're my person",
+          "I never want this to end"
+        ]
+      }
+    ]
+  },
+  "customClosingMessage": "Three years. A lifetime to go. Forever begins here, Zara."
+}

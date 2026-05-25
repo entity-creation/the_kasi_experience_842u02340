@@ -1,0 +1,92 @@
+{
+  "id": "ghi789",
+  "recipientName": "Elara",
+  "eventType": "A Milestone",
+  "theme": "luxury",
+  "tier": "eternal",
+  "senderName": "Those who have always known",
+  "letter": "Elara,\n\nSome people arrive in the world and quietly reshape it. They don't announce themselves. They simply show up — with clarity, with grace, with the kind of presence that makes everything around them more considered.\n\nYou are that person.\n\nThis experience is not a gift. It is an archive. The beginning of a long record that will grow alongside you — letters added, memories uploaded, unlocks timed to dates that matter.\n\nReturn to it on your birthdays. On the hard days. On the days so good you want to remember exactly how they felt.\n\nThis is your legacy, already in motion.",
+  "photos": [
+    "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=1200&q=80",
+    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1200&q=80",
+    "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
+    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80",
+    "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1200&q=80",
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&q=80"
+  ],
+  "voiceNote": "/audio/elara-voice.mp3",
+  "video": "/video/elara-memory.mp4",
+  "messagesFromGroup": [
+    { "name": "Mother", "message": "Watching you grow has been the greatest privilege of my life." },
+    { "name": "Adanna", "message": "There is no one else I would have wanted beside me through all of it. None of it." },
+    { "name": "Theo", "message": "You make the world quieter and better. Always have." },
+    { "name": "Remi", "message": "The most elegant person I know — and not because of anything you wear." }
+  ],
+  "chapters": [
+    {
+      "title": "The Early Years",
+      "content": "Before the world knew who you were, we did. The curiosity. The intensity. The way you held a room at eight years old as naturally as you hold it now.",
+      "media": []
+    },
+    {
+      "title": "The Years of Becoming",
+      "content": "Every hard choice you made in your twenties was a line of code — writing the person you would one day become. We watched. We knew.",
+      "media": []
+    },
+    {
+      "title": "This Chapter",
+      "content": "Whatever this milestone means to you — know that we see it. We mark it. And we are proud in a way that has no adequate expression.",
+      "media": []
+    }
+  ],
+  "timelineEvents": [
+    {
+      "date": "2001",
+      "title": "The Beginning",
+      "description": "Where every great story starts — quietly, with no announcement.",
+      "media": "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?w=800&q=80"
+    },
+    {
+      "date": "2012",
+      "title": "The First Big Moment",
+      "description": "You chose something difficult. You were right to.",
+      "media": "https://images.unsplash.com/photo-1488161628813-04466f872be2?w=800&q=80"
+    },
+    {
+      "date": "2019",
+      "title": "The Turning Point",
+      "description": "Some years change everything. This was one of them.",
+      "media": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80"
+    },
+    {
+      "date": "2024",
+      "title": "This Milestone",
+      "description": "The moment this experience was created. A marker in time.",
+      "media": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80"
+    }
+  ],
+  "futureUnlocks": [
+    {
+      "date": "2025-01-01",
+      "message": "A new year. You made it, gracefully as always. Open this and remember: everything you're worrying about right now will resolve itself. It always does.",
+      "media": ""
+    },
+    {
+      "date": "2026-01-01",
+      "message": "Two years since this experience began. By now, new things have happened that we couldn't have predicted. Add them to your memory. They belong here.",
+      "media": ""
+    },
+    {
+      "date": "2030-01-01",
+      "message": "Half a decade from when this was first opened. We hope you have become everything you dreamed of in those quieter years.",
+      "media": ""
+    }
+  ],
+  "rewardItems": [
+    "A private dining experience",
+    "A handcrafted jewellery piece",
+    "An international weekend, destination of your choice",
+    "A commissioned portrait"
+  ],
+  "customClosingMessage": "A memory worth keeping forever."
+}

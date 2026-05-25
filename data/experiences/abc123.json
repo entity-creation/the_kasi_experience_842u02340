@@ -1,0 +1,78 @@
+{
+  "id": "abc123",
+  "recipientName": "Ada",
+  "eventType": "Birthday",
+  "theme": "cinematic",
+  "tier": "signature",
+  "senderName": "Your people",
+  "letter": "From the first frame to this moment, you have been the protagonist of every story worth telling.\n\nBirthdays are just timestamps — but this one marks something different. You have grown into someone who changes rooms simply by entering them. Someone who listens like a camera holds focus: completely, generously, without rushing to the next shot.\n\nThis experience was made for you because you deserve more than a card. You deserve a film.",
+  "photos": [
+    "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=1200&q=80",
+    "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=80",
+    "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=1200&q=80",
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&q=80",
+    "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80",
+    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80"
+  ],
+  "voiceNote": "/audio/voice.mp3",
+  "video": "/video/memory.mp4",
+  "messagesFromGroup": [
+    { "name": "John", "message": "So proud of who you've become. Here's to the next chapter." },
+    { "name": "Sarah", "message": "You light up every room. Happy birthday, Ada!" },
+    { "name": "Marcus", "message": "Still remember the day we met. You changed everything." },
+    { "name": "Leila", "message": "The kindest soul I know. This year is yours." }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter 1: Beginnings",
+      "content": "It started with a hello that neither of us knew would matter. But the best stories always start that way — quietly, without fanfare, with no idea what they're becoming.",
+      "media": []
+    },
+    {
+      "title": "Chapter 2: The Memories We Made",
+      "content": "Every photo, every voice note, every shared laugh — they were chapters being written in real time. We didn't know we were making something worth keeping. But we were.",
+      "media": []
+    },
+    {
+      "title": "Chapter 3: What We Never Said",
+      "content": "There are things that go unsaid not from carelessness but from depth. This is that chapter. The one where we say them.",
+      "media": []
+    },
+    {
+      "title": "Chapter 4: Your Reward",
+      "content": "For showing up, for being you, for making every room warmer — this one's yours.",
+      "media": []
+    },
+    {
+      "title": "Chapter 5: The Final Frame",
+      "content": "Every great film ends with a frame you carry with you. This is ours.",
+      "media": []
+    }
+  ],
+  "rewardItems": [
+    "Dinner for two — your choice",
+    "A weekend getaway",
+    "Spa day, fully covered",
+    "Shopping spree, no limits"
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "text": "Where did we first meet Ada?",
+        "correctAnswer": "At the gallery opening",
+        "options": ["At the gallery opening", "At school", "At a party", "Online"]
+      },
+      {
+        "text": "What is Ada's favourite season?",
+        "correctAnswer": "Autumn",
+        "options": ["Spring", "Summer", "Autumn", "Winter"]
+      },
+      {
+        "text": "What does Ada always order at the café?",
+        "correctAnswer": "Oat latte, no sugar",
+        "options": ["Black coffee", "Cappuccino", "Oat latte, no sugar", "Green tea"]
+      }
+    ]
+  },
+  "customClosingMessage": "Crafted as a Signature Experience. For Ada, always."
+}

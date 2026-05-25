@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&family=Courier+Prime&family=Nunito:wght@400;700;800&family=Quicksand:wght@400;600&family=Comic+Neue&family=Cormorant:wght@300;400;600&family=Lato:wght@300;400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   CSS CUSTOM PROPERTIES – set by ThemeProvider at runtime
+   ========================================================= */
+:root {
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-primary: #EDE7DD;
+  --color-secondary: #D1C7B8;
+  --color-accent: #C4A484;
+  --color-text: #333333;
+  --color-textLight: #777777;
+  --color-shadow: rgba(0,0,0,0.05);
+
+  --font-heading: 'Inter, sans-serif';
+  --font-body: 'Inter, sans-serif';
+  --font-letter: 'Georgia, serif';
+
+  --transition-duration: 800ms;
+  --transition-easing: ease-in-out;
+}
+
+/* =========================================================
+   BASE RESETS
+   ========================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+/* =========================================================
+   SCROLLBAR STYLING (luxurious thin)
+   ========================================================= */
+::-webkit-scrollbar          { width: 4px; }
+::-webkit-scrollbar-track    { background: transparent; }
+::-webkit-scrollbar-thumb    { background: var(--color-accent); border-radius: 2px; }
+
+/* =========================================================
+   UTILITY CLASSES
+   ========================================================= */
+.scene {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.kasi-card {
+  background: var(--color-surface);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 64px var(--color-shadow);
+  padding: 3rem;
+  max-width: 720px;
+  width: 100%;
+  position: relative;
+}
+
+.kasi-heading {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.kasi-body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.8;
+}
+
+.kasi-letter-text {
+  font-family: var(--font-letter);
+  color: var(--color-text);
+  line-height: 2;
+  font-size: 1.1rem;
+}
+
+.kasi-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2.2rem;
+  border: 1.5px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 999px;
+}
+.kasi-btn:hover {
+  background: var(--color-accent);
+  color: var(--color-surface);
+  transform: scale(1.04);
+}
+
+/* =========================================================
+   CINEMATIC LETTERBOX BARS
+   ========================================================= */
+.letterbox::before,
+.letterbox::after {
+  content: '';
+  position: fixed;
+  left: 0; right: 0;
+  height: 8vh;
+  background: #000;
+  z-index: 100;
+  pointer-events: none;
+}
+.letterbox::before { top: 0; }
+.letterbox::after  { bottom: 0; }
+
+/* =========================================================
+   BACKGROUND STYLES (applied via ThemeProvider class)
+   ========================================================= */
+.bg-soft-white       { background: #FAFAFA; }
+.bg-soft-blur-hearts { background: radial-gradient(ellipse at 30% 20%, #FADADD 0%, #FFF1E6 50%, #FFE4EF 100%); }
+.bg-full-screen-scene{ background: #0B0F1A; }
+.bg-bright-gradients { background: linear-gradient(135deg, #FFE0F0 0%, #E0F7FA 50%, #FFF9C4 100%); }
+.bg-deep-dark-gradients { background: radial-gradient(ellipse at top, #1a1000 0%, #0A0A0A 60%); }
+
+/* =========================================================
+   PAPER TEXTURE (letter backgrounds)
+   ========================================================= */
+.paper-vintage {
+  background-color: #FFF8F0;
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(180,150,100,0.08) 28px),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.paper-gold-embossed {
+  background: linear-gradient(135deg, #1A1500 0%, #0A0A0A 100%);
+  border: 1px solid rgba(200,162,74,0.3);
+}
+
+.paper-subtitle-overlay {
+  background: rgba(11,15,26,0.85);
+  backdrop-filter: blur(8px);
+}
+
+/* =========================================================
+   PARTICLE SYSTEM
+   ========================================================= */
+.particle {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  animation: goldDust 4s ease-out forwards;
+}
+
+/* =========================================================
+   QUIZ CARD FLIP
+   ========================================================= */
+.flip-card { perspective: 1000px; }
+.flip-card-inner {
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-front, .flip-card-back {
+  position: absolute; inset: 0;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+.flip-card-back { transform: rotateY(180deg); }
+
+/* =========================================================
+   SPIN WHEEL
+   ========================================================= */
+.spin-wheel {
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--spin-duration, 4s) cubic-bezier(0.17,0.67,0.12,0.99);
+}
+
+/* =========================================================
+   RESPONSIVE HELPERS
+   ========================================================= */
+@media (max-width: 768px) {
+  .kasi-card { padding: 2rem 1.5rem; border-radius: 1rem; }
+  .scene { padding: 1.5rem 1rem; }
+  .letterbox::before, .letterbox::after { height: 5vh; }
+}
