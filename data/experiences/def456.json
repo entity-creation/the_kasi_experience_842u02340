@@ -1,18 +1,18 @@
 {
   "id": "def456",
-  "recipientName": "Zara",
+  "recipientName": "Милашка",
   "eventType": "Anniversary",
-  "theme": "romantic",
+  "theme": "cinematic",
   "tier": "journey",
   "senderName": "Your love",
-  "letter": "My darling Zara,\n\nThree years ago I didn't know that saying yes to one dinner would mean saying yes to a whole life. But here we are — and every single day since has felt like a gift I didn't earn.\n\nYou are the person I look for in every room. The voice that makes the whole day make sense. The reason I believe in things like fate and luck and all the soft words I used to roll my eyes at.\n\nToday is just a date on a calendar. But it carries the weight of everything we've built together.\n\nI love you. More than these words, always.",
+  "letter": "My darling Милашка,\n\nThree years ago I didn't know that saying yes to one dinner would mean saying yes to a whole life. But here we are — and every single day since has felt like a gift I didn't earn.\n\nYou are the person I look for in every room. The voice that makes the whole day make sense. The reason I believe in things like fate and luck and all the soft words I used to roll my eyes at.\n\nToday is just a date on a calendar. But it carries the weight of everything we've built together.\n\nI love you. More than these words, always.",
   "photos": [
-    "https://images.unsplash.com/photo-1494955870116-e6e71573c3f8?w=1200&q=80",
-    "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=80",
-    "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=1200&q=80",
-    "https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?w=1200&q=80",
-    "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=1200&q=80",
-    "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1200&q=80"
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_565031426_17926215033113229_8397943396466355128_n.jpg.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_566233691_17926214994113229_6854155769636042000_n.jpg.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_611238114_17935702050113229_7855587234409372259_n.jpg.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_612048043_17935702095113229_3794398686668453879_n.jpg.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_654020383_17949025908113229_4330521066767512042_n.jpg.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_652634775_17949025893113229_1806297597526650773_n.jpg.jpeg"
   ],
   "voiceNote": "/audio/anniversary-voice.mp3",
   "soundtrack": "/audio/our-song.mp3",
@@ -45,5 +45,5 @@
       }
     ]
   },
-  "customClosingMessage": "Three years. A lifetime to go. Forever begins here, Zara."
+  "customClosingMessage": "Three years. A lifetime to go. Forever begins here, Милашка."
 }
