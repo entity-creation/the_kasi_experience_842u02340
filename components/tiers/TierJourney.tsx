@@ -8,6 +8,7 @@ import { Letter } from '../shared/Letter';
 import { PhotoGallery } from '../shared/PhotoGallery';
 import { AudioPlayer } from '../shared/AudioPlayer';
 import { Quiz } from '../shared/Quiz';
+import { EndingScreen } from '../shared/EndingScreen';
 import { ExperienceData } from '../types';
 
 type Scene = 'intro' | 'letter' | 'quiz' | 'voice' | 'gallery' | 'ending';
@@ -21,7 +22,7 @@ export function TierJourney({ data }: { data: ExperienceData }) {
   const next = (to: Scene) => setScene(to);
 
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div style={{ minHeight: '100vh', background: colors.background }}>
       <SceneTransition sceneKey={scene} className="scene w-full min-h-screen">
 
         {/* ── INTRO ── */}
@@ -187,33 +188,10 @@ export function TierJourney({ data }: { data: ExperienceData }) {
 
         {/* ── ENDING ── */}
         {scene === 'ending' && (
-          <div className="scene text-center px-6">
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              className="text-3xl md:text-4xl font-light leading-relaxed"
-              style={{ fontFamily: theme.typography.headingFont, color: colors.text }}
-            >
-              Every memory led<br />to this moment.
-            </motion.p>
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ delay: 1, duration: 1.2 }}
-              className="mx-auto mt-8 h-px"
-              style={{ width: 80, background: colors.accent }}
-            />
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2 }}
-              className="mt-6 text-xs tracking-[0.3em] uppercase opacity-30"
-              style={{ fontFamily: theme.typography.bodyFont }}
-            >
-              The Kasi Experience · The Journey
-            </motion.p>
-          </div>
+          <EndingScreen
+            customMessage={data.customClosingMessage}
+            tierLabel="The Journey"
+          />
         )}
       </SceneTransition>
     </div>

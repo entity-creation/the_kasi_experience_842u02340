@@ -10,6 +10,7 @@ import { AudioPlayer } from '../shared/AudioPlayer';
 import { VideoPlayer } from '../shared/VideoPlayer';
 import { GiftReveal } from '../shared/GiftReveal';
 import { GroupMessages } from '../shared/GroupMessages';
+import { EndingScreen } from '../shared/EndingScreen';
 import { ExperienceData } from '../types';
 
 type Scene =
@@ -316,37 +317,10 @@ export function TierLuxury({ data }: { data: ExperienceData }) {
 
         {/* ── ENDING ── */}
         {scene === 'ending' && (
-          <div className="scene text-center px-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2.5 }}
-            >
-              <p
-                className="text-4xl md:text-5xl font-thin leading-relaxed"
-                style={{ fontFamily: theme.typography.headingFont, color: colors.text, letterSpacing: '0.02em' }}
-              >
-                Part of the Luxury<br />
-                <span style={{ color: colors.accent }}>Experience Collection.</span>
-              </p>
-              <motion.div
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 1.8, duration: 1.2 }}
-                className="mx-auto mt-10 h-px"
-                style={{ width: 80, background: colors.accent }}
-              />
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 3 }}
-                className="mt-6 text-xs tracking-[0.4em] uppercase opacity-20"
-                style={{ fontFamily: theme.typography.bodyFont }}
-              >
-                The Kasi Experience · Luxury
-              </motion.p>
-            </motion.div>
-          </div>
+          <EndingScreen
+            customMessage={data.customClosingMessage ?? 'Part of the Luxury Experience Collection.'}
+            tierLabel="Luxury Experience"
+          />
         )}
       </SceneTransition>
     </div>

@@ -10,6 +10,7 @@ import { AudioPlayer } from '../shared/AudioPlayer';
 import { VideoPlayer } from '../shared/VideoPlayer';
 import { GroupMessages } from '../shared/GroupMessages';
 import { SpinWheel } from '../shared/SpinWheel';
+import { EndingScreen } from '../shared/EndingScreen';
 import { ExperienceData } from '../types';
 
 type Scene =
@@ -48,7 +49,7 @@ export function TierSignature({ data }: { data: ExperienceData }) {
   );
 
   return (
-    <div style={{ minHeight: '100vh' }}>
+    <div style={{ minHeight: '100vh', background: colors.background }}>
       <SceneTransition sceneKey={scene} className="scene w-full min-h-screen">
 
         {/* ── INTRO ── */}
@@ -266,34 +267,10 @@ export function TierSignature({ data }: { data: ExperienceData }) {
 
         {/* ── ENDING ── */}
         {scene === 'ending' && (
-          <div className="scene text-center px-6">
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 2 }}
-              className="text-4xl md:text-6xl font-light leading-tight"
-              style={{ fontFamily: theme.typography.headingFont }}
-            >
-              Crafted as a<br />
-              <em style={{ color: colors.accent }}>Signature Experience.</em>
-            </motion.p>
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ delay: 1.5, duration: 1 }}
-              className="mx-auto mt-10 h-px"
-              style={{ width: 60, background: colors.accent }}
-            />
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2.5 }}
-              className="mt-6 text-xs tracking-[0.3em] uppercase opacity-20"
-              style={{ fontFamily: theme.typography.bodyFont }}
-            >
-              The Kasi Experience
-            </motion.p>
-          </div>
+          <EndingScreen
+            customMessage={data.customClosingMessage ?? 'Crafted as a Signature Experience.'}
+            tierLabel="Signature Experience"
+          />
         )}
       </SceneTransition>
     </div>

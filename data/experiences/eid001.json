@@ -1,0 +1,73 @@
+{
+  "id": "eid001",
+  "recipientName": "Amira",
+  "eventType": "Eid Al-Fitr",
+  "theme": "celebration",
+  "tier": "journey",
+  "celebrationEvent": "eid",
+  "senderName": "Your family",
+  "letter": "Amira,\n\nEid Mubarak.\n\nThirty days of fasting. Thirty mornings of quiet before the world woke up. Thirty nights of prayer that only you and Allah know the depth of.\n\nAnd now — today — it ends and begins at once. The way all meaningful things do.\n\nYou have always carried your faith like something precious but not fragile. Not something to be hidden away, but something that walks with you into every room you enter.\n\nThis Eid, may you feel how seen you are. Not just by us — but by a Creator who has known you by name since before the world began.\n\nTaqabbal Allahu minna wa minkum.\nMay Allah accept it from all of us.",
+  "photos": [
+    "https://images.unsplash.com/photo-1564760290292-23341e4df6ec?w=1200&q=80",
+    "https://images.unsplash.com/photo-1576788369575-d5b6a56a36cd?w=1200&q=80",
+    "https://images.unsplash.com/photo-1593843596579-a85aacae1db1?w=1200&q=80",
+    "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200&q=80",
+    "https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?w=1200&q=80",
+    "https://images.unsplash.com/photo-1545652985-5edd365b12eb?w=1200&q=80"
+  ],
+  "voiceNote": "/audio/eid-voice.mp3",
+  "soundtrack": "/audio/eid-ambient.mp3",
+  "messagesFromGroup": [
+    {
+      "name": "Baba",
+      "message": "Eid Mubarak ya habibti. Every year I watch you grow in grace and faith. My heart overflows with pride and with love."
+    },
+    {
+      "name": "Mama",
+      "message": "From the little girl who used to wake me for suhoor to the woman you are now — you are my greatest blessing. Eid Mubarak, my love."
+    },
+    {
+      "name": "Zainab",
+      "message": "We broke so many fasts together and prayed through so many nights. Alhamdulillah for you, my sister. Always."
+    },
+    {
+      "name": "Aunt Fatou",
+      "message": "May this Eid bring you everything your heart has been quiet about. The things only dua holds. Eid Mubarak."
+    },
+    {
+      "name": "Yusuf",
+      "message": "You make this family warmer simply by being in it. Eid Mubarak, Amira. Always so proud of you."
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "text": "What is the traditional greeting exchanged during Eid?",
+        "correctAnswer": "Eid Mubarak",
+        "options": ["Eid Mubarak", "As-salamu alaykum", "Ramadan Kareem", "Taqabbal Allah"]
+      },
+      {
+        "text": "What marks the beginning of Eid Al-Fitr?",
+        "correctAnswer": "The sighting of the new moon",
+        "options": [
+          "The first prayer of the day",
+          "The sighting of the new moon",
+          "Sunrise on the 30th day",
+          "The Eid sermon"
+        ]
+      },
+      {
+        "text": "What is the charity given at the end of Ramadan called?",
+        "correctAnswer": "Zakat al-Fitr",
+        "options": ["Zakat al-Fitr", "Sadaqah", "Khums", "Waqf"]
+      }
+    ]
+  },
+  "rewardItems": [
+    "A handmade gift, chosen with care",
+    "An Eid dinner, just the family",
+    "An experience you've always wanted",
+    "A keepsake to remember this Eid"
+  ],
+  "customClosingMessage": "Eid Mubarak, Amira. May your days be blessed."
+}

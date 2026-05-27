@@ -8,6 +8,7 @@ import { Letter } from '../shared/Letter';
 import { PhotoGallery } from '../shared/PhotoGallery';
 import { AudioPlayer } from '../shared/AudioPlayer';
 import { VideoPlayer } from '../shared/VideoPlayer';
+import { EndingScreen } from '../shared/EndingScreen';
 import { ExperienceData } from '../types';
 
 type Scene = 'intro' | 'envelope' | 'letter' | 'photos' | 'ending';
@@ -24,7 +25,7 @@ export function TierMoment({ data }: TierMomentProps) {
   const next = (to: Scene) => setScene(to);
 
   return (
-    <div className="scene" style={{ minHeight: '100vh', padding: 0 }}>
+    <div className="scene" style={{ minHeight: '100vh', padding: 0, background: colors.background }}>
       <SceneTransition sceneKey={scene} className="scene w-full">
         {/* ── INTRO ── */}
         {scene === 'intro' && (
@@ -159,29 +160,10 @@ export function TierMoment({ data }: TierMomentProps) {
 
         {/* ── ENDING ── */}
         {scene === 'ending' && (
-          <div className="scene text-center px-6">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5 }}
-            >
-              <p
-                className="text-3xl md:text-5xl font-light"
-                style={{ fontFamily: theme.typography.headingFont, color: colors.text, lineHeight: 1.4 }}
-              >
-                {data.customClosingMessage ?? theme.endingScreen.message}
-              </p>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5 }}
-                className="mt-6 text-sm tracking-widest uppercase opacity-30"
-                style={{ fontFamily: theme.typography.bodyFont }}
-              >
-                The Kasi Experience
-              </motion.p>
-            </motion.div>
-          </div>
+          <EndingScreen
+            customMessage={data.customClosingMessage}
+            tierLabel="The Moment"
+          />
         )}
       </SceneTransition>
     </div>

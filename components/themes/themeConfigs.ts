@@ -172,7 +172,7 @@ export const themes: Record<string, ThemeConfig> = {
       photos: { maxPerPage: 8, frameStyle: 'polaroid', hoverEffect: 'glow', transition: 'fade' },
       audio: { playerStyle: 'vinyl', waveformAnimation: true },
       video: { frameStyle: 'vintage', fullscreenOnPlay: false },
-      buttons: { shape: 'heart', hoverAnimation: 'glow' },
+      buttons: { shape: 'heart', hoverAnimation: 'bounce' },
       groupMessages: { presentation: 'heartBalloons', animation: 'float' },
       giftReveal: { animation: 'boxOpen', particleEffect: 'petals' },
       quiz: { cardStyle: 'loveLetter', revealEffect: 'hover' },
@@ -318,4 +318,63 @@ export const themes: Record<string, ThemeConfig> = {
     transitions: { sceneTransition: 'bloom', duration: 1.5, easing: 'easeInOut' },
     endingScreen: { message: 'A memory worth keeping forever', animation: 'goldParticles' },
   },
+  // -----------------------------------------------------------
+  // CELEBRATION – Sixth theme. Adapts to any festive event via
+  // celebrationEvent in the experience JSON. The base values here
+  // are SSR/fallback defaults; celebrationVariants.ts overrides
+  // them at runtime inside ThemeProvider when theme === 'celebration'.
+  // backgroundStyle: 'event-dynamic' signals CelebrationBackground
+  // to render the event-specific SVG pattern.
+  // -----------------------------------------------------------
+  celebration: {
+    colors: {
+      background: '#1A1A2E',
+      surface:    '#16213E',
+      primary:    '#0F3460',
+      secondary:  '#533483',
+      accent:     '#E94560',
+      text:       '#FFFFFF',
+      textLight:  '#A8A8C0',
+      shadow:     'rgba(0,0,0,0.5)',
+    },
+    typography: {
+      headingFont: "\'Cormorant\', serif",
+      bodyFont:    "\'Lato\', sans-serif",
+      letterFont:  "\'EB Garamond\', serif",
+      headingSize: '3rem',
+      bodySize:    '1.1rem',
+    },
+    animations: {
+      letterReveal:     'inkSpread',
+      transitionPreset: 'bloom',
+      photoEffect:      'fade',
+      buttonHover:      'glow',
+    },
+    layout: {
+      backgroundStyle: 'event-dynamic',
+      cardStyle:       'celebration-card',
+      spacing:         'generous',
+    },
+    components: {
+      letter: {
+        backgroundTexture:    'event-dynamic',
+        waxSealAnimation:     true,
+        handwritingAnimation: false,
+        paperFoldEffect:      false,
+      },
+      photos: { maxPerPage: 8, frameStyle: 'rounded', hoverEffect: 'glow', transition: 'fade' },
+      audio:  { playerStyle: 'vinyl', waveformAnimation: true },
+      video:  { frameStyle: 'rounded', fullscreenOnPlay: false },
+      buttons: { shape: 'rounded', hoverAnimation: 'glow' },
+      groupMessages: { presentation: 'goldEnvelopes', animation: 'float' },
+      giftReveal:    { animation: 'boxOpen', particleEffect: 'goldDust' },
+      quiz:          { cardStyle: 'loveLetter', revealEffect: 'flip' },
+    },
+    transitions: { sceneTransition: 'bloom', duration: 1.2, easing: 'easeInOut' },
+    endingScreen: { message: 'May this celebration be remembered forever', animation: 'goldParticles' },
+  },
 };
+
+// NOTE: The celebration theme's colors are overridden at runtime
+// by ThemeProvider when it detects theme === 'celebration'.
+// The base values above serve as SSR/no-JS fallbacks only.

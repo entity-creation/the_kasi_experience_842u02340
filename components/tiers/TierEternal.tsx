@@ -10,6 +10,7 @@ import { AudioPlayer } from '../shared/AudioPlayer';
 import { VideoPlayer } from '../shared/VideoPlayer';
 import { Timeline } from '../shared/Timeline';
 import { GroupMessages } from '../shared/GroupMessages';
+import { EndingScreen } from '../shared/EndingScreen';
 import { ExperienceData } from '../types';
 
 type Scene =
@@ -425,74 +426,10 @@ export function TierEternal({ data }: { data: ExperienceData }) {
 
         {/* ── CONTINUATION ── */}
         {scene === 'continuation' && (
-          <div className="scene text-center px-6">
-            {/* Ambient particles */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden">
-              {Array.from({ length: 18 }).map((_, i) => (
-                <motion.div
-                  key={i}
-                  className="absolute"
-                  style={{
-                    width: 1 + Math.random() * 2,
-                    height: 40 + Math.random() * 60,
-                    background: `linear-gradient(to bottom, ${colors.accent}00, ${colors.accent}55, ${colors.accent}00)`,
-                    left: `${Math.random() * 100}%`,
-                    top: `${Math.random() * 80}%`,
-                    opacity: 0.3,
-                  }}
-                  animate={{
-                    y: [0, -20, 0],
-                    opacity: [0.1, 0.4, 0.1],
-                  }}
-                  transition={{
-                    duration: 3 + Math.random() * 5,
-                    repeat: Infinity,
-                    delay: Math.random() * 3,
-                    ease: 'easeInOut',
-                  }}
-                />
-              ))}
-            </div>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 2 }}
-              className="text-4xl md:text-6xl font-thin leading-relaxed"
-              style={{ fontFamily: theme.typography.headingFont, color: colors.text }}
-            >
-              Your journey<br />
-              <span style={{ color: colors.accent }}>will continue…</span>
-            </motion.p>
-
-            <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ delay: 2, duration: 1.2 }}
-              className="mx-auto mt-10 h-px"
-              style={{ width: 80, background: colors.accent }}
-            />
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 3 }}
-              className="mt-6 text-sm opacity-50 max-w-xs mx-auto leading-relaxed"
-              style={{ fontFamily: theme.typography.bodyFont, color: colors.text }}
-            >
-              New memories, letters, and surprises will be added to this experience over time. Come back on each date to unlock what's waiting for you.
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 4.5 }}
-              className="mt-10 text-xs tracking-[0.4em] uppercase opacity-20"
-              style={{ fontFamily: theme.typography.bodyFont }}
-            >
-              The Kasi Experience · Eternal
-            </motion.p>
-          </div>
+          <EndingScreen
+            customMessage={data.customClosingMessage ?? 'Your journey will continue…'}
+            tierLabel="Eternal Experience"
+          />
         )}
       </SceneTransition>
     </div>

@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { ThemeProvider } from '@/components/themes/ThemeProvider';
 import { ExperienceData } from '@/components/types';
+import type { CelebrationEvent } from '@/components/types';
 
 // ── Dynamically import tier components (code-split per tier) ──
 const TierMoment    = dynamic(() => import('@/components/tiers/TierMoment').then(m => ({ default: m.TierMoment })));
@@ -21,21 +22,20 @@ interface ExperienceRendererProps {
  * ExperienceRenderer
  *
  * Client boundary that:
- * 1. Wraps everything in ThemeProvider (sets CSS variables + context)
- * 2. Dynamically renders the correct tier component
- *
- * Tier → component mapping:
- *   moment    → TierMoment
- *   journey   → TierJourney
- *   signature → TierSignature
- *   luxury    → TierLuxury
- *   eternal   → TierEternal
+ * 1. Wraps everything in ThemeProvider (sets CSS variables + context).
+ *    For the celebration theme, also passes celebrationEvent so the
+ *    provider can merge event-specific color overrides and expose
+ *    the CelebrationVariant through context.
+ * 2. Dynamically renders the correct tier component.
  */
 export function ExperienceRenderer({ data, themeKey, tierKey }: ExperienceRendererProps) {
   const TierComponent = resolveTier(tierKey);
 
   return (
-    <ThemeProvider themeKey={themeKey}>
+    <ThemeProvider
+      themeKey={themeKey}
+      celebrationEvent={data.celebrationEvent as CelebrationEvent | undefined}
+    >
       <TierComponent data={data} />
     </ThemeProvider>
   );
