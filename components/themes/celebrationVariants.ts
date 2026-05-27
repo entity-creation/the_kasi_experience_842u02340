@@ -75,7 +75,7 @@ export const CELEBRATION_VARIANTS: Record<CelebrationEvent, CelebrationVariant> 
       primary:    '#1A7A48',
       secondary:  '#C9A84C',
       accent:     '#D4AF37',
-      text:       '#FFF8E7',
+      text:       '#A3A3A3',
       textLight:  '#C9D9C4',
       shadow:     'rgba(0,0,0,0.5)',
     },
