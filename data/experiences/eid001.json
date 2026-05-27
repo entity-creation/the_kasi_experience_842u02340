@@ -1,19 +1,18 @@
 {
   "id": "eid001",
-  "recipientName": "Amira",
-  "eventType": "Eid Al-Fitr",
+  "recipientName": "Safiyya",
+  "eventType": "Eid El-Kabir",
   "theme": "celebration",
   "tier": "journey",
   "celebrationEvent": "eid",
   "senderName": "Your family",
-  "letter": "Amira,\n\nEid Mubarak.\n\nThirty days of fasting. Thirty mornings of quiet before the world woke up. Thirty nights of prayer that only you and Allah know the depth of.\n\nAnd now — today — it ends and begins at once. The way all meaningful things do.\n\nYou have always carried your faith like something precious but not fragile. Not something to be hidden away, but something that walks with you into every room you enter.\n\nThis Eid, may you feel how seen you are. Not just by us — but by a Creator who has known you by name since before the world began.\n\nTaqabbal Allahu minna wa minkum.\nMay Allah accept it from all of us.",
+  "letter": "Safiyya,\n\nEid Mubarak.\n\nThirty days of fasting. Thirty mornings of quiet before the world woke up. Thirty nights of prayer that only you and Allah know the depth of.\n\nAnd now — today — it ends and begins at once. The way all meaningful things do.\n\nYou have always carried your faith like something precious but not fragile. Not something to be hidden away, but something that walks with you into every room you enter.\n\nThis Eid, may you feel how seen you are. Not just by us — but by a Creator who has known you by name since before the world began.\n\nTaqabbal Allahu minna wa minkum.\nMay Allah accept it from all of us.",
   "photos": [
-    "https://images.unsplash.com/photo-1564760290292-23341e4df6ec?w=1200&q=80",
-    "https://images.unsplash.com/photo-1576788369575-d5b6a56a36cd?w=1200&q=80",
-    "https://images.unsplash.com/photo-1593843596579-a85aacae1db1?w=1200&q=80",
-    "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200&q=80",
-    "https://images.unsplash.com/photo-1603899122634-f086ca5f5ddd?w=1200&q=80",
-    "https://images.unsplash.com/photo-1545652985-5edd365b12eb?w=1200&q=80"
+    "hhttps://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/saf5.PNG",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/saf4.PNG",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/saf3.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/saf2.PNG",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/saf1.PNG"
   ],
   "voiceNote": "/audio/eid-voice.mp3",
   "soundtrack": "/audio/eid-ambient.mp3",
@@ -36,7 +35,7 @@
     },
     {
       "name": "Yusuf",
-      "message": "You make this family warmer simply by being in it. Eid Mubarak, Amira. Always so proud of you."
+      "message": "You make this family warmer simply by being in it. Eid Mubarak, Safiyya. Always so proud of you."
     }
   ],
   "quiz": {
@@ -69,5 +68,5 @@
     "An experience you've always wanted",
     "A keepsake to remember this Eid"
   ],
-  "customClosingMessage": "Eid Mubarak, Amira. May your days be blessed."
+  "customClosingMessage": "Eid Mubarak, Safiyya. May your days be blessed."
 }
