@@ -1,21 +1,23 @@
 {
   "id": "def456",
-  "recipientName": "Милашка",
-  "eventType": "Anniversary",
-  "theme": "romantic",
+  "recipientName": "Juhi",
+  "eventType": "Birthday",
+  "theme": "luxury",
   "tier": "journey",
-  "senderName": "Your love",
-  "letter": "My darling Милашка,\n\nThree years ago I didn't know that saying yes to one dinner would mean saying yes to a whole life. But here we are — and every single day since has felt like a gift I didn't earn.\n\nYou are the person I look for in every room. The voice that makes the whole day make sense. The reason I believe in things like fate and luck and all the soft words I used to roll my eyes at.\n\nToday is just a date on a calendar. But it carries the weight of everything we've built together.\n\nI love you. More than these words, always.",
+  "senderName": "BBG",
+  "letter": "Hey Lil Generator,\n\nIt has been three years since I met you and I keep fInding new reasons to why That was my best day In Canada. Today though, on thiS special day when you graced This world witH your prEsence not too long ago, I want to say thank you for Coming intO this worLd and making it brighter and thank yOu for coming into my life and making it betteR.\n\nI hope this year brings you everythinG you deseRve, momEnts that make you smilE unexpectedly, people who love you as deeply as you love them, opportuNities that excite you, and the courage to chase every dream that's been sitting in your heart.\n\nNo matter where life takes us, I'll always be thankful that our paths crossed. Meeting you has been one of the greatest gifts life has given me, and I hope this year reminds you just how loved, valued, and special you truly are.\n\nI love you and appreciate you always.",
   "photos": [
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_565031426_17926215033113229_8397943396466355128_n.jpg.jpeg",
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_566233691_17926214994113229_6854155769636042000_n.jpg.jpeg",
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_611238114_17935702050113229_7855587234409372259_n.jpg.jpeg",
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_612048043_17935702095113229_3794398686668453879_n.jpg.jpeg",
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_654020383_17949025908113229_4330521066767512042_n.jpg.jpeg",
-    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/SnapInsta.to_652634775_17949025893113229_1806297597526650773_n.jpg.jpeg"
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_1438.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_1861.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_1926.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_2154.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_2256.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_2350.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/IMG_2990.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/e6986331-7c8c-41a0-8ce6-5a8b8356f652.jpeg"
   ],
-  "voiceNote": "/audio/anniversary-voice.mp3",
-  "soundtrack": "/audio/our-song.mp3",
+  "voiceNote": "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/Juhi%20birthday.m4a",
+  "soundtrack": "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/Monaky-Chandelier-Vistanaij.com_.mp3",
   "messagesFromGroup": [
     { "name": "Mum", "message": "From the moment I met you, I knew you were the one for him. Love you both." },
     { "name": "Priya", "message": "Three years of watching you two and I still get butterflies. Happy anniversary!" },
@@ -24,26 +26,26 @@
   "quiz": {
     "questions": [
       {
-        "text": "Where did we go on our very first date?",
-        "correctAnswer": "That little Italian place on Fifth",
-        "options": ["The rooftop bar", "That little Italian place on Fifth", "The cinema", "The harbour"]
+        "text": "What was the color of the bikini you wore on our first time on the beach together?",
+        "correctAnswer": "Neon Green",
+        "options": ["Neon Blue", "Black", "Dark Green", "Neon Green"]
       },
       {
-        "text": "What song was playing when we danced in the kitchen?",
-        "correctAnswer": "Something by Norah Jones",
-        "options": ["Something by Norah Jones", "A Frank Sinatra track", "Nina Simone", "We don't remember"]
+        "text": "What did you wear on our first picture together (on my phone)?",
+        "correctAnswer": "Green Dress",
+        "options": ["White Jacket and Black Sweat Pants", "Brown Blouse and Grey Pants", "Black Dress", "Green Dress"]
       },
       {
-        "text": "What did I say the first time I told you I loved you?",
-        "correctAnswer": "I'm not great with words, but I love you",
+        "text": "You number is saved as Lil Generator with 4 emojis. What is the third emoji",
+        "correctAnswer": "Green Dinosaur",
         "options": [
-          "I love you more than words",
-          "I'm not great with words, but I love you",
-          "You're my person",
-          "I never want this to end"
+          "Green Dinosaur",
+          "Green Heart",
+          "Green Turtle",
+          "Green Frog"
         ]
       }
     ]
   },
-  "customClosingMessage": "Three years. A lifetime to go. Forever begins here, Милашка."
+  "customClosingMessage": "Happy Birthday Juhi 💖. (P.S There is a Second Quiz)"
 }
