@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useRef } from 'react';
-import { motion } from 'framer-motion';
-import { useTheme } from '../themes/ThemeProvider';
+import { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { useTheme } from "../themes/ThemeProvider";
 
 interface SpinWheelProps {
   items: string[];
@@ -21,8 +21,12 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
 
   // Color palette for segments
   const segColors = [
-    colors.primary, colors.secondary, colors.accent + '88',
-    colors.primary + 'cc', colors.secondary + 'cc', colors.accent + '55',
+    colors.primary,
+    colors.secondary,
+    colors.accent + "88",
+    colors.primary + "cc",
+    colors.secondary + "cc",
+    colors.accent + "55",
   ];
 
   const spin = () => {
@@ -32,7 +36,9 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
 
     const extraSpins = 5 + Math.floor(Math.random() * 5);
     const targetSegment = Math.floor(Math.random() * items.length);
-    const targetAngle = 360 * extraSpins + targetSegment * segmentAngle + segmentAngle / 2;
+    const targetAngle =
+      360 * extraSpins +
+      (360 - (targetSegment * segmentAngle + segmentAngle / 2));
     const newRotation = rotation + targetAngle;
 
     setRotation(newRotation);
@@ -57,9 +63,10 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
     const y1 = cy + r * Math.sin(startAngle);
     const x2 = cx + r * Math.cos(endAngle);
     const y2 = cy + r * Math.sin(endAngle);
-    const midAngle = ((i * segmentAngle + segmentAngle / 2 - 90) * Math.PI) / 180;
-    const textX = cx + (r * 0.65) * Math.cos(midAngle);
-    const textY = cy + (r * 0.65) * Math.sin(midAngle);
+    const midAngle =
+      ((i * segmentAngle + segmentAngle / 2 - 90) * Math.PI) / 180;
+    const textX = cx + r * 0.65 * Math.cos(midAngle);
+    const textY = cy + r * 0.65 * Math.sin(midAngle);
     const largeArc = segmentAngle > 180 ? 1 : 0;
 
     return (
@@ -81,7 +88,7 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
           transform={`rotate(${i * segmentAngle + segmentAngle / 2}, ${textX}, ${textY})`}
           style={{ maxWidth: 60 }}
         >
-          {item.length > 10 ? item.slice(0, 9) + '…' : item}
+          {item.length > 10 ? item.slice(0, 9) + "…" : item}
         </text>
       </g>
     );
@@ -94,10 +101,13 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
         <div
           className="absolute z-10"
           style={{
-            top: -10, left: '50%', transform: 'translateX(-50%)',
-            width: 0, height: 0,
-            borderLeft: '12px solid transparent',
-            borderRight: '12px solid transparent',
+            top: -10,
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: 0,
+            height: 0,
+            borderLeft: "12px solid transparent",
+            borderRight: "12px solid transparent",
             borderTop: `24px solid ${colors.accent}`,
             filter: `drop-shadow(0 2px 4px ${colors.shadow})`,
           }}
@@ -111,7 +121,14 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
         >
           {segments}
           {/* Center circle */}
-          <circle cx={cx} cy={cy} r={18} fill={colors.surface} stroke={colors.accent} strokeWidth="2" />
+          <circle
+            cx={cx}
+            cy={cy}
+            r={18}
+            fill={colors.surface}
+            stroke={colors.accent}
+            strokeWidth="2"
+          />
         </motion.svg>
       </div>
 
@@ -128,10 +145,10 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
             color: colors.surface,
             fontFamily: theme.typography.bodyFont,
             opacity: spinning ? 0.7 : 1,
-            cursor: spinning ? 'not-allowed' : 'pointer',
+            cursor: spinning ? "not-allowed" : "pointer",
           }}
         >
-          {spinning ? 'Spinning…' : 'Spin the Wheel'}
+          {spinning ? "Spinning…" : "Spin the Wheel"}
         </motion.button>
       )}
 
@@ -141,10 +158,21 @@ export function SpinWheel({ items, onResult }: SpinWheelProps) {
           initial={{ opacity: 0, y: 16, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           className="text-center px-8 py-5 rounded-2xl shadow-lg"
-          style={{ background: colors.surface, border: `2px solid ${colors.accent}` }}
+          style={{
+            background: colors.surface,
+            border: `2px solid ${colors.accent}`,
+          }}
         >
-          <p className="text-sm opacity-50 mb-1 tracking-widest uppercase">You won</p>
-          <p className="text-xl font-semibold" style={{ fontFamily: theme.typography.headingFont, color: colors.accent }}>
+          <p className="text-sm opacity-50 mb-1 tracking-widest uppercase">
+            You won
+          </p>
+          <p
+            className="text-xl font-semibold"
+            style={{
+              fontFamily: theme.typography.headingFont,
+              color: colors.accent,
+            }}
+          >
             {result}
           </p>
         </motion.div>

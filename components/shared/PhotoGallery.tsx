@@ -112,7 +112,7 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
     return (
       <>
         <div className="grid gap-8 px-4" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
-          {visible.map((src, i) => (
+          {photos.map((src, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0 }}

@@ -1,0 +1,68 @@
+{
+  "id": "abc123",
+  "recipientName": "Daddy",
+  "eventType": "Birthday",
+  "theme": "luxury",
+  "tier": "signature",
+  "senderName": "Your family",
+  "photos": [
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad1.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad2.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad3.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad4.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad5.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad6.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad7.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad8.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad9.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad10.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad11.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad12.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad13.jpeg",
+    "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dad14.jpeg"
+    
+  ],
+  "voiceNote": "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/dadvn.ogg",
+  "video": "https://qazhp74gqmxj1hsl.public.blob.vercel-storage.com/7F617C52-4065-438D-B18B-C81C6B3B0D8E-MOVIE.mov",
+  "messagesFromGroup": [
+    { "name": "Ogechi", "message": "Happy birthday to the best daddy in the whole world. I thank God that I’m your daughter and I’m proud to be your daughter. We thank God for his far God has brought you and we know God still has great plans for you." },
+    { "name": "Chima", "message": "Happy Birthday daddy. I love you. I and everyone else who knows you are extremely lucky to have you in our lives. I am wishing you many more joyful, blessing filled and stress-free years" },
+    { "name": "Ella", "message": "I love you so much daddy, you’re the reason I feel reassured even in sad and dark situations and I’m eternally grateful for you. Happy birthday daddy" },
+    { "name": "Victor", "message": "Happy birthday daddy, as God adds another year to your life, I pray that it comes with peace and satisfaction. That each new day feel like honey in your mouth, and that ur mind will be at rest. Let your be filled with vigor and health, and let the Holy Spirit shine in your life. With long life and prosperity I wish you happy birthday" }
+  ],
+  "chapters": [
+    {
+      "title": "Chapter 1: Beginnings",
+      "content": "From when we were kids, you have been our silent strength. Moving forward while carrying us on your back. And you did this with a smile on your face.",
+      "media": []
+    },
+    {
+      "title": "Chapter 2: The Memories We Made",
+      "content": "Every photo tells a tale of joy, laughter, growth, unity — and what has been common in all these is you. A man like no other, a father like no other and a husband like no other.",
+      "media": []
+    },
+    {
+      "title": "Chapter 3: Mesage from Your Children",
+      "content": "Today is your day and we want to use this opportunity to remind you that we always love and support you. This chapter contains a message from each of us",
+      "media": []
+    },
+    {
+      "title": "Chapter 4: Your Birthday Gift",
+      "content": "It might not be much but this gift will be the least you will receive in the coming years",
+      "media": []
+    },
+    {
+      "title": "Chapter 5: The Final Frame",
+      "content": "Every great film ends with a frame you carry with you. This is ours.",
+      "media": []
+    }
+  ],
+  "rewardItems": [
+    "Dinner out",
+    "A wristwatch",
+    "Cake",
+    "Shopping spree, with limits"
+  ],
+  
+  "customClosingMessage": "Crafted as a Signature Experience for Daddy. From your kids."
+}
